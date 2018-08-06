@@ -1,40 +1,6 @@
 Usage
 =====
 
-Updating URL lists
-------------------
-
-You can update the URL lists with:
-
-```
-# Update Italian gambling website list
-./bin/update-official it/aams
-
-# Update Italian BOFH list
-./bin/update-official it/bofh
-
-# Update Tor brirdges list
-./bin/update-services tor/bridges
-
-# Update Tor directory authority list
-./bin/update-services tor/dir_auths
-```
-
-Adding new URLs
----------------
-
-To find the mapping from category codes to category names, see [this
-file](https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-category_codes.csv).
-A similar mapping exists from country codes to country names in [this
-file](https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-country_codes.csv).
-To add a new URL, run:
-
-```
-./bin/add http://example.com/
-```
-
-You will be guided through an interactive step-by-step process to add the URL.
-
 What Is It?
 ===========
 
@@ -54,15 +20,15 @@ Categories are divided among four broad themes:
 * Political (This category is focused primarily on Web sites that express views
 in opposition to those of the current government. Content more broadly related
 to human rights, freedom of expression, minority rights, and religious
-movements is also considered here.) 
+movements is also considered here.)
 
 * Social (This group covers material related
 to sexuality, gambling, and illegal drugs and alcohol, as well as other topics
-that may be socially sensitive or perceived as offensive).  
+that may be socially sensitive or perceived as offensive).
 
 * Conflict/Security
 (Content related to armed conflicts, border disputes, separatist movements, and
-militant groups is included in this category).  
+militant groups is included in this category).
 
 * Internet Tools (Web sites that
 provide e-mail, Internet hosting, search, translation, Voice-over Internet
@@ -81,8 +47,34 @@ Lists are available in both CSV and JSON format.
 Please note that these lists are not the entirety of testing lists but rather just
 the newest list for every unique country code.
 
+Contributing URLs
+=================
+
+To learn how to contribute URLs for testing see: https://ooni.torproject.org/get-involved/contribute-test-lists/
+
+Citation
+========
+
+
+If using this dataset in a publication, please see the following [BibTeX File format](http://www.bibtex.org/).
+
+```
+@misc{testlist,
+  title={URL testing lists intended for discovering website censorship},
+  author={Citizen Lab and Others},
+  year={2014},
+  url={https://github.com/citizenlab/test-lists},
+  note={\href{https://github.com/citizenlab/test-lists}{https://github.com/citizenlab/test-lists}}
+}
+```
+
+An example Chicago Style citation is included below:
+
+> Citizen Lab and Others. 2014. _URL Testing Lists Intended for Discovering Website Censorship_. https://github.com/citizenlab/test-lists.
+
 License
 ========
+
 
 All data is provided under Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International and available in full
